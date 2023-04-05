@@ -1,6 +1,6 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: [ 'build', '-t', 'northamerica-northeast1-docker.pkg.dev/crafty-campaign-366723/quickstart-docker-repo/harmonization', '.' ]
-images: ['northamerica-northeast1-docker.pkg.dev/crafty-campaign-366723/quickstart-docker-repo/harmonization']
+  args: [ 'build', '-t', 'northamerica-northeast1-docker.pkg.dev/healthspan-stg/quickstart-docker-repo/harmonization', '.' ]
+images: ['northamerica-northeast1-docker.pkg.dev/healthspan-stg/quickstart-docker-repo/harmonization']
 options:
   logging: CLOUD_LOGGING_ONLY
