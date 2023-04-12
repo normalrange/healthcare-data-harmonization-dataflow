@@ -1,6 +1,8 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: [ 'build', '-t', 'northamerica-northeast1-docker.pkg.dev/healthspan-stg/main-docker-repo/harmonization', '.' ]
-images: ['northamerica-northeast1-docker.pkg.dev/healthspan-stg/main-docker-repo/harmonization']
+  args: [ 'build', '-t', '$_LOCATION-docker.pkg.dev/healthspan-stg/main-docker-repo/harmonization', '.' ]
+images: ['$_LOCATION-docker.pkg.dev/healthspan-stg/main-docker-repo/harmonization']
+substitutions:
+  _LOCATION: northamerica-northeast1
 options:
   logging: CLOUD_LOGGING_ONLY
