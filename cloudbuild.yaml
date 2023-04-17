@@ -1,7 +1,7 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: [ 'build', '-t', '$_LOCATION-docker.pkg.dev/$PROJECT_ID/main-docker-repo/harmonization', '.' ]
-images: ['$_LOCATION-docker.pkg.dev/$PROJECT_ID/main-docker-repo/harmonization']
+  args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/harmonization', '.' ]
+images: ['gcr.io/$PROJECT_ID/harmonization']
 substitutions:
   _LOCATION: northamerica-northeast1
 options:
